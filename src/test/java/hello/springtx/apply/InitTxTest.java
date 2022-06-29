@@ -1,6 +1,7 @@
 package hello.springtx.apply;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.TestConfiguration;
@@ -15,6 +16,10 @@ import javax.annotation.PostConstruct;
 @SpringBootTest
 public class InitTxTest {
 
+    @Test
+    void go() {
+
+    }
     @TestConfiguration
     static class InitTxConfig {
         @Bean
